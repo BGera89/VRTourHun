@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> VR Tour Hungary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.\js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .download{
+            grid-column: 3;
+            grid-row: 1;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <label class="label">VR Tour Hungary</label>
+            <ul>
+                <li><a href="#">Kezdőlap</a></li>
+                <li><a href="#">Rólunk</a></li>
+                <li><a href="#">Hírességek</a></li>
+                <li><a href="#">Árak</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="headline">
+            <h2>Városnézés VR szemüvegen keresztül</h2>
+            <p>Fedezz fel egy várost mielőtt ellátogatnál oda a virtuális valóságon keresztül egy híresség útbaigazításával.</p>
+            
+        </div>
+        
+    <!-- 
+    <div class="frame">
+        <input type="radio" name="images" id="i1" checked>
+        <input type="radio" name="images" id="i2">
+        <input type="radio" name="images" id="i3">
+
+        <div class="slide_img" id="one">
+            <img src="im/szeged_menő.png">
+
+            <label for="i3" class="pre"></label>
+            <label for="i2" class="nxt"></label>
+        </div>
+
+        <div class="slide_img" id="two">
+            <img src="im/szegedike.png">
+
+            <label for="i1" class="pre"></label>
+            <label for="i3" class="nxt"></label>
+        </div>
+
+        <div class="slide_img" id="three">
+            <img src="im/szeged_szobor.jpg">
+
+            <label for="i2" class="pre"></label>
+            <label for="i1" class="nxt"></label>
+        </div>
+        
+        <div class="dotty">
+            <label class="dots" id="dot1" for="i1"></label>
+            <label class="dots" id="dot2" for="i2"></label>
+            <label class="dots" id="dot3" for="i3"></label>
+        </div>
+       
+    </div>
+    -->
+        <div class="new_frame">
+            <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="im/szeged_menő.png"></div>
+            <div class="swiper-slide"><img src="im/szeged_szobor.jpg"></div>
+            <div class="swiper-slide"><img src="im/szegedike.png"></div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+            </div>
+        </div>
+        
+    </div>
+    <div class="download">
+        <h2><a href="#">App letöltése</a></h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+          
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          
+          });
+
+    </script>
+
+</body>
+
+</html>
