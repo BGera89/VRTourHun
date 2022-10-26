@@ -1,0 +1,268 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+  }
+body {
+    background-color: white;
+    color: black;
+    font-size: 21px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+  body {
+      margin: 0;
+      background: #222;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 800;
+  }
+  
+  .container {
+      width: 80%;
+      margin: 0 auto;
+  }
+  
+  header {
+    background: #55d6aa;
+  }
+  
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+
+  .label {
+    line-height: 80px;
+    float: left;
+    
+  }
+  
+  
+ 
+  
+  nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 200px;
+    padding-top: 23px;
+  
+    position: relative;
+  }
+  
+  nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  } 
+  #i1,#i2,#i3{
+    display: none;
+ }
+
+.headline{
+    
+  padding-left: 5%;
+    color: #ececec;
+    width: 500px;
+    height: 200px;
+    
+}
+.headline p{
+  
+    font-size: 14px;
+    color: #b6b6b6;
+}
+/*
+.download a{
+  background-origin: content-box;
+  padding-left: 5%;
+  color: black;
+  width: 200px;
+  height: 40px;
+  background-clip: content-box;
+  background-color: #55d6aa;
+  color: #444;
+  text-decoration: none;
+  list-style: none; 
+}
+
+*/
+.download a{
+  display: table;
+  text-align: center;
+  margin: 0px 150px;
+  color: black;
+  width: 250px;
+  height: 40px;
+  text-decoration: none;
+  list-style: none; 
+  background-color: #55d6aa;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.download span{
+  background-color: green; 
+}
+.download a:hover {
+  color: #000;
+}
+
+.download a::before {
+  content: '';
+  display:block;
+  height: 10px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+
+/*
+ .frame{
+    margin:0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 35%;
+    border: solid 5px black;
+ }
+ .frame .slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+ .frame  .slide_img img{
+    width: 100%;
+    height: 100%;
+ }
+
+ 
+ .pre,.nxt{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88, 88, 88, 0.4);
+    z-index: 99;
+    cursor: pointer;
+ }
+ .pre{
+    left: 0;
+ }
+ .nxt{
+    right: 0;
+ }
+ .frame .dotty{
+    width: 100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+ }
+
+ .dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background:rgba(0, 0, 0, 0.6) ;
+ }
+
+ .slide_img{
+    z-index: -1;
+ }
+
+ #i1:checked ~#one,
+ #i2:checked ~#two,
+ #i3:checked ~#three{
+    z-index: 9;
+ }
+
+ #i1:checked ~ .dotty #dot1,
+ #i2:checked ~ .dotty #dot2,
+ #i3:checked ~ .dotty #dot3{
+    background: #fff;
+ }
+
+*/
+.new_frame{
+  margin:0 auto;
+  margin-top: 20px;
+  position: right;
+  width: 1000px;
+  height: 115px;
+  padding-bottom: 20%;
+  padding-left: 20%;
+
+ 
+}
+.swiper{
+  width: 1000px;
+  height: 500px;
+  object-fit: contain;
+
+}
+.swiper-slide img{
+  width: 1000px;
+  height: 500px;
+}
+.label{
+  grid-area: text;
+  font-family: 'Sarpanch', sans-serif;
+  font-size: 5vmin;
+  margin: 0;
+  color: #1d9099;
+  text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
+}
