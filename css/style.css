@@ -113,6 +113,7 @@ body::-webkit-scrollbar-track {
     font-size: 14px;
     color: #b6b6b6;
 }
+/*
 .download a{
   background-origin: content-box;
   padding-left: 5%;
@@ -125,16 +126,36 @@ body::-webkit-scrollbar-track {
   text-decoration: none;
   list-style: none; 
 }
+
+*/
+.download a{
+  display: table;
+  text-align: center;
+  margin: 0px 150px;
+  color: black;
+  width: 250px;
+  height: 40px;
+  text-decoration: none;
+  list-style: none; 
+  background-color: #55d6aa;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.download span{
+  background-color: green; 
+}
 .download a:hover {
   color: #000;
 }
 
 .download a::before {
   content: '';
-  display: block;
-  height: 5px;
+  display:block;
+  height: 10px;
   background-color: #444;
-
   position: absolute;
   top: 0;
   width: 0%;
