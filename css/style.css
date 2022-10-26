@@ -223,6 +223,7 @@ body::-webkit-scrollbar-track {
   width: 1000px;
   height: 115px;
   padding-bottom: 20%;
+  padding-left: 20%;
 
  
 }
@@ -235,4 +236,12 @@ body::-webkit-scrollbar-track {
 .swiper-slide img{
   width: 1000px;
   height: 500px;
+}
+.label{
+  grid-area: text;
+  font-family: 'Sarpanch', sans-serif;
+  font-size: 5vmin;
+  margin: 0;
+  color: #1d9099;
+  text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
 }
