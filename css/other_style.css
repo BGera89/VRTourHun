@@ -76,7 +76,8 @@
   ul li {
     padding: 60px;
     margin-left: 10px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-size: 1.5rem;
   }
   
   ul li:hover {
@@ -197,6 +198,7 @@ p {
     .headline2{
       margin-top: 20px;
       padding-left: 30px;
+      font-size: 2rem;
   }
   p {
       grid-column: 1;
@@ -205,6 +207,7 @@ p {
       margin: 1rem 0 0.5rem 1rem;
       padding: 1rem;
       background: rgba(white, 0.8);
+      font-size: 2rem;
     }
   
   .new_frame{
@@ -213,16 +216,16 @@ p {
       margin:0 auto;
       margin-top: 20px;
       position: center;
-      width: 600px;
+      width: 35rem;
       padding-bottom: 20%;
       
   }
   .swiper{
-      width: 600px;      
+      width: 35rem;      
     
     }
     .swiper-slide img{
-      width: 600px;
+      width: 35rem;
         }
   
     .download a{
