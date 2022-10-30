@@ -88,10 +88,17 @@
 .mobile-menu {
     display: none;
     position: absolute;
-    top: 50px;
+    margin-top: -25px;
+    margin-left: 65%;
     left: 0;
     height: calc(100vh - 50px);
-    width: 100%;
+    width: 200px;
+    z-index: 100;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
   }
   
   .open .mobile-menu {
@@ -99,12 +106,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: black;
+    z-index: 100;
+
   }
   
   .mobile-menu li {
     margin-bottom: 10px;
+
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     header nav {
       display: none;
     }
@@ -170,3 +181,67 @@ p {
   .download a:hover {
     color: white;
   }
+
+@media only screen and (max-width: 768px) {
+    .body {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 70px;
+    }
+    .headline2{
+      margin-top: 20px;
+      padding-left: 30px;
+  }
+  p {
+      grid-column: 1;
+      margin-left: 150px;
+      position: relative;
+      margin: 1rem 0 0.5rem 1rem;
+      padding: 1rem;
+      background: rgba(white, 0.8);
+    }
+  
+  .new_frame{
+      grid-column: 1;
+      grid-row: 2;
+      margin:0 auto;
+      margin-top: 20px;
+      position: center;
+      width: 600px;
+      padding-bottom: 20%;
+      
+  }
+  .swiper{
+      width: 600px;      
+    
+    }
+    .swiper-slide img{
+      width: 600px;
+        }
+  
+    .download a{
+      display: table;
+      text-align: center;
+      margin: 0px 150px;
+      color: black;
+      width: 250px;
+      height: 40px;
+      text-decoration: none;
+      list-style: none; 
+      background-color: #55d6aa;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .download a:hover {
+      color: white;
+    }
+  }
+  
