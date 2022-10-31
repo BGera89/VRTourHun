@@ -241,7 +241,7 @@ p {
     .body {
       display: grid;
       grid-template-columns: 1fr;
-      padding: 1em;
+      padding: 1rem;
       grid-row-gap: 100px;
     }
     header{
@@ -250,16 +250,16 @@ p {
     .wrapper{
       display: grid;
       grid-template-columns: 1fr;
-      margin-left: 70px;
+      margin-left: 2%;
     }
     .headline2{
       margin-top: 20px;
       padding-left: 30px;
-      font-size: 2rem;
+      font-size: 2.5rem;
   }
   p {
       grid-column: 1;
-      margin-left: 150px;
+      margin-left: 0;
       position: relative;
       margin: 1rem 0 0.5rem 1rem;
       padding: 1rem;
@@ -273,25 +273,26 @@ p {
       margin:0 auto;
       margin-top: 20px;
       position: center;
-      width: 35rem;
+      width: 50rem;
       padding-bottom: 20%;
       
   }
   .swiper{
-      width: 35rem;      
+      width: 50rem;      
     
     }
     .swiper-slide img{
-      width: 35rem;
+      width: 50rem;
         }
   
     .download a{
       display: table;
       text-align: center;
       margin: 0px 150px;
+      margin-left: 40%;
       color: black;
       width: 250px;
-      height: 40px;
+      height: 60px;
       font-size: 2rem;
       text-decoration: none;
       list-style: none; 
